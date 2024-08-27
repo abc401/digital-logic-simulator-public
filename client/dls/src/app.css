@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--clr-accent: #002657;
+		--clr-off: #555151;
+		--clr-on: #cb4444;
+
+		--side-bar-width: 200px;
+		--side-bar-min-width: 100px;
+		--ornament-color: cyan;
+	}
+
+	html,
+	body {
+		@apply overscroll-none;
+	}
+
+	body {
+		@apply bg-neutral-800 font-bold text-neutral-50;
+	}
+
+	input {
+		@apply focus:outline-none;
+	}
+	a {
+		@apply text-accent hover:underline;
+	}
+}
+
+@layer components {
+	.material-symbols-outlined {
+		font-variation-settings:
+			'FILL' 0,
+			'wght' 400,
+			'GRAD' 0,
+			'opsz' 24;
+	}
+}
