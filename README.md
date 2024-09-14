@@ -33,18 +33,18 @@ There are two major steps to running this software and they are as follows:
 
 #### Database
 
-You have to configure your database before running the server. In order to do this run the following command:
+You have to configure your database before running the server. In order to do so, run the following command in the terminal:
 
 `go run . --configdb`
 
 #### DotEnv
 
-Create a file named `.env` in your project root directory and add the following line to it:
+Create a file named `.env` in the project root directory and add the following line to it:
 `TOKEN_SECRET=<a-random-string-of-characters>`
 
 ### Running the Server
 
-After the configuration of the database has ended you can run the server with the following command:
+After the database has been configured, you can launch the server with the following command:
 
 `go run .`
 
@@ -52,13 +52,13 @@ After the configuration of the database has ended you can run the server with th
 
 ### Installing Dependencies
 
-In order to install dependencies run the following command:
+Run the following command to install dependencies:
 
 `npm i`
 
 ### Configuration
 
-- Run `ipconfig` or `ipconfig` depending on you OS and look for your machine's network ip address.
+- Run `ipconfig` on Windows or `ifconfig` for Linux and MacOS and look for your machine's network ip address.
 - Make a file in the client directory and name it `.env`.
 - In it paste the network ip address in the following format:
   `VITE_API_SERVER="http://<network-address>:8080"`
